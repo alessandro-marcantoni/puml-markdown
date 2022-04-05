@@ -1,0 +1,13 @@
+name: 'Plantuml for markdown'
+description: 'Embed planutml diagrams inside markdown files'
+runs:
+  using: "composite"
+  steps:
+    - name: Setting up node
+      uses: actions/setup-node@v1
+      with:
+        node-version: '16'
+    - name: Add plantuml for markdown
+      run: npm i -g puml-for-markdown
+    - name: Embed plantuml in markdown
+      run: puml-for-markdown
