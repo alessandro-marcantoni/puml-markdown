@@ -9,5 +9,7 @@ runs:
         node-version: '16'
     - name: Add plantuml for markdown
       run: npm i -g puml-for-markdown
+      shell: bash
     - name: Embed plantuml in markdown
       run: puml-for-markdown
+      shell: bash
